@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piłka nożna</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="JS/ajax.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <header id="naglowek">
+        <img id="headimg1" src="Pictures/ball.png" alt="obraz">
+        <h1 id="goal">#👋Piłka nożna!!!👋#</h1>
+        <img id="headimg2" src="Pictures/ball.png" alt="obraz">
+        
+    </header>
+
+
+    <nav id="navmob">
+        <a><div>
+            <img class="menumob" src="Pictures/menu.svg" alt="image" onclick="showList()">
+        </div></a>
+        <div id="hide">
+            <a href="index.html">Start</a>
+            <a href="page1.html">Reprezentacja Polski</a>
+            <a href="page2.html">Piłka klubowa</a>
+            <a href="page3.php">Twoje konto</a>
+            <a href="page4.html">Skontaktuj się z nami</a>
+        </div>
+    </nav>
+
+
+    <section>
+
+
+        <nav id="nawigacja" class="menu">
+            <a href="index.html">Start</a>
+            <a href="page1.html">Reprezentacja Polski</a>
+            <a href="page2.html">Piłka klubowa</a>
+            <div class="dropdown">
+                <a href="page3.php">Twoje konto</a>
+                <ul>
+                    <li><a href="page3.php">Zaloguj się</a></li>
+                    <li><a href="page3.php">Zarejestruj się</a></li>
+                    <li><a href="page3.php">Odzyskaj konto</a></li>
+                </ul>
+            </div>
+            <a href="page4.html">Skontaktuj się z nami</a>
+        </nav>
+
+        <div id="main-panel" class="main">
+
+            <div id="left-panel">
+
+                <div id="plmx" class="article">
+                    <h3>Pierwszy mecz Polski na MŚ w Katarze!!!</h3>
+                    <p>W ubiegły wtorek o godzinie 17:00 Polska reprezentacja zmierzyła się z pierwszym grupowym
+                        rywalem, którym była reprezentacja <b>Meksyku</b>. Mecz zakończył się bezbramkowym
+                        <b>remisem</b>. Aktualnie liderem grupy Polski na MŚ jest <b>Arabia Saudyjska</b> z dorobkiem 3
+                        punktów, a stawkę zamyka Argentyna. Kolejny mecz Polaków odbędzie się <b>26.11 w sobotę</b> o
+                        godzinie <b>14:00</b> i przyjdzie się im zmierzyć z Arabią Saudyjską. Będzie to kluczowy mecz
+                        jeśli chodzi o dalsze uczestnictwo Polaków w Mistrzostaw
+                    </p>
+                    <img id="image1" src="Pictures/articles/PLMX2.jfif" alt="obraz">
+                    <img id="image2" src="Pictures/articles/PLMX4.jpg" alt="obraz">
+
+                </div>
+
+                <div id="mś22" class="article">
+                    <h3>Rozpoczęły się Mistrzostwa Świata 2022 w Katatarze!!!</h3>
+                    <p>XXII Mistrzostwa Świata w Piłce Nożnej 2022 rozpoczęły się. Meczem inaugurującym rozgrywki było
+                        spotkanie reprezentacji Kataru z reprezentacją Ekwadoru.</p>
+                    <img src="Pictures/articles/MŚ1.jfif" alt="obraz">
+                    <img src="Pictures/articles/MŚ2.jpg" alt="obraz">
+                    <img src="Pictures/articles/MŚ3.jfif" alt="obraz">
+                </div>
+
+                <div id="km9" class="article">
+                    <h3>Karim Benzema zdobywcą złotej piłki!!!</h3>
+                    <p>Karim Benzema został zwycięzcą tegorocznego plebiscytu Złotej Piłki, wyprzedzając Roberta
+                        Lewandowskiego i Sadio Mane. Napastnik Realu Madryt został pierwszym francuskim zwycięzcą tego
+                        plebiscytu od 1998 roku. Wtedy Złotą Piłkę otrzymał Zinedine Zidane.</p>
+                    <img src="Pictures/articles/BenzemaBDor.jpg" alt="obraz">
+                    <img src="Pictures/articles/Benzema.jfif" alt="obraz">
+                    <img src="Pictures/articles/benz3.jfif" alt="obraz">
+                </div>
+
+
+            </div>
+
+
+            <div id="right-panel">
+                <h2>Lista artykułów</h2>
+                <ul>
+                    <li><a href="#plmx">Pierwszy mecz Polski na MŚ w Katarze!!!</a></li>
+                    <li><a href="#mś22">Rozpoczęły się Mistrzostwa Świata 2022 w Katatarze!!!</a></li>
+                    <li><a href="#km9">Karim Benzema zdobywcą złotej piłki!!!</a></li>
+                </ul>
+                <div id="ajax">
+                    <h3>Ciekawostka o AJAXIE</h3>
+                    <button type="button" onclick="loadDoc()">SPRAWDŹ</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer id="stopka">
+        <button id="scroll-top">⬆</button>
+        <button id="light-color">* <b>Light-mode</b> *</button>
+        <button id="dark-color">* <b>Dark-mode</b> *</button>
+        <a href="www.facebook.com" target="_blank"><img src="Pictures/fb.png" alt="img"></a>
+        <a href="https://www.instagram.com/move.federation/" target="_blank"><img src="Pictures/ig.png" alt="img"></a>
+        <a href="https://twitter.com/search?q=%23Quatar2022&src=typeahead_click" target="_blank"><img
+                src="Pictures/twt.png" alt="img"></a>
+    </footer>
+
+    <script src="JS/scroll.js"></script>
+    <script src="JS/animacja_pilki.js"></script>
+    <script src="JS/kolory.js"></script>
+    <script src="JS/burgir.js"></script>
+</body>
+
+</html>

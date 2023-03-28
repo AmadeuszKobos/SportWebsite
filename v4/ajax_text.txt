@@ -1,0 +1,10 @@
+<div id="ciekawostka">
+    <h2>Ajax</h2>
+    <p>
+        Od lat 70. XX w. jest to najbardziej utytułowana drużyna w Holandii zarówno na arenie krajowej (wielokrotny
+        mistrz, zdobywca pucharu oraz superpucharu), jak i międzynarodowej (triumfator wszystkich możliwych oficjalnych
+        rozgrywek pucharowych w kraju i Europie – jeden z czterech klubów „Starego Kontynentu”, który posiada w swojej
+        kolekcji wszystkie europejskie trofea). Jednym z najważniejszych jego sukcesów jest wywalczenie w 1972 tak
+        zwanej potrójnej korony, czyli mistrzostwa i pucharu Holandii oraz Pucharu Europy.
+    </p>
+</div>

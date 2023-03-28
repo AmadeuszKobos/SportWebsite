@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informacje</title>
+  <link rel="stylesheet" href="style3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <img id="headimg1" src="Pictures/ball.png" alt="obraz">
+    <h1>#😀O nas😀#</h1>
+    <img id="headimg2" src="Pictures/ball.png" alt="obraz">
+  </header>
+
+  <nav id="navmob">
+    <a>
+      <div>
+        <img class="menumob" src="Pictures/menu.svg" alt="image" onclick="showList()">
+      </div>
+    </a>
+    <div id="hide">
+      <a href="index.html">Start</a>
+      <a href="page1.html">Reprezentacja Polski</a>
+      <a href="page2.html">Piłka klubowa</a>
+      <a href="page3.php">Twoje konto</a>
+      <a href="page4.html">Skontaktuj się z nami</a>
+    </div>
+  </nav>
+
+  <nav id="nawigacja" class="menu">
+    <a href="index.html">Start</a>
+    <a href="page1.html">Reprezentacja Polski</a>
+    <a href="page2.html">Piłka klubowa</a>
+    <div class="dropdown">
+      <a href="page3.php">Twoje konto</a>
+      <ul>
+        <li><a href="page3.php">Zaloguj się</a></li>
+        <li><a href="page3.php">Zarejestruj się</a></li>
+        <li><a href="page3.php">Odzyskaj konto</a></li>
+      </ul>
+    </div>
+    <a href="page4.html">Skontaktuj się z nami</a>
+  </nav>
+
+  <section id="aboutus-page">
+
+
+
+    <div id="aboutus">
+      <h3>O stronie</h3>
+      <p>Strona dotyczy świata piłki nożnej, aktualnych wydarzeń, najnowszych wiadomości i ciekawostek</p>
+      <h3>Historia powstania</h3>
+      <p>Strona powstała w związku z projektem na zajęcia z Technologii internetowych</p>
+      <h3>Data powstania</h3>
+      <p>Okres czasu między początkiem października i końcówką listopada 2022r.</p>
+      <h3>Autor</h3>
+      <p>Autorem strony jest Amadeusz Kobos</p>
+      <h3>Media społecznościowe</h3>
+      <div id="social-media">
+        <p>Znajdź nas tu również tu..</p>
+        <a href="www.facebook.com" target="_blank"><img src="Pictures/fb.png" alt="img">www.facebook.com/pnstrona</a>
+        <a href="https://www.instagram.com/move.federation/" target="_blank"><img src="Pictures/ig.png"
+            alt="img">www.instagram.com/pnstrona</a>
+        <a href="https://twitter.com/search?q=%23Quatar2022&src=typeahead_click" target="_blank"><img
+            src="Pictures/twt.png" alt="img">www.twitter.com/pnstrona</a>
+
+
+
+      </div>
+    </div>
+
+
+
+    <h3>Podoba Ci się strona? Masz pomysł jak możemy ją ulepszyć strone? Znalazłeś błąd? Uzupełnij formularz poniżej.
+      Dziękuje za
+      każdą wiadomość 😄</h3>
+
+    <div class="contact-panel">
+      <form action="feedback.php" id="contact" method="post">
+        <label for="fname">Imie</label>
+        <input type="text" id="fname" name="firstname" placeholder="Twoje Imie">
+
+        <label for="lname">Nazwisko</label>
+        <input type="text" id="lname" name="lastname" placeholder="Twoje Nazwisko">
+
+        <label for="country">Kraj</label>
+        <select id="country" name="country">
+          <option value="polska">Polska</option>
+          <option value="niemcy">Niemcy</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Twoja wiadomość</label>
+        <textarea id="subject" name="subject" placeholder="Treść wiadomości..."></textarea>
+
+        <input type="submit" name="submit" id="endform">
+      </form>
+    </div>
+
+
+    <h3>Ludzie którzy mają konto na naszej stronie</h3>
+    <div class="slider-outer">
+      <img src="Pictures/arrow-left.png" class="prev" alt="Prev">
+      <div class="slider-inner">
+        <img src="Pictures/gallery/gal1.jpg" alt="image.jpg">
+        <img src="Pictures/gallery/gal2.webp" alt="image.jpg">
+        <img src="Pictures/gallery/gal3.webp" alt="image.jpg">
+        <img src="Pictures/gallery/gal4.jpg" alt="image.jpg">
+        <img src="Pictures/gallery/gal5.jpg" alt="image.jpg">
+        <img src="Pictures/gallery/gal1.jpg" alt="image.jpg">
+        <img src="Pictures/gallery/gal2.webp" alt="image.jpg">
+        <img src="Pictures/gallery/gal3.webp" alt="image.jpg" class="active">
+        <img src="Pictures/gallery/gal4.jpg" alt="image.jpg">
+        <img src="Pictures/gallery/gal5.jpg" alt="image.jpg">
+        <img src="Pictures/gallery/gal1.jpg" alt="image.jpg">
+        <img src="Pictures/gallery/gal2.webp" alt="image.jpg">
+        <img src="Pictures/gallery/gal3.webp" alt="image.jpg">
+        <img src="Pictures/gallery/gal4.jpg" alt="image.jpg">
+        <img src="Pictures/gallery/gal5.jpg" alt="image.jpg">
+      </div>
+      <img src="Pictures/arrow-right.png" class="next" alt="Next">
+    </div>
+
+
+
+  </section>
+
+  <footer>
+    <button id="light-color">* <b>Light-mode</b> *</button>
+    <button id="dark-color">* <b>Dark-mode</b> *</button>
+    <button id="scroll-top">⬆</button>
+    <a href="www.facebook.com" target="_blank"><img src="Pictures/fb.png" alt="img"></a>
+    <a href="https://www.instagram.com/move.federation/" target="_blank"><img src="Pictures/ig.png" alt="img"></a>
+    <a href="https://twitter.com/search?q=%23Quatar2022&src=typeahead_click" target="_blank"><img src="Pictures/twt.png"
+        alt="img"></a>
+  </footer>
+
+  <script src="JS/kolory.js"></script>
+  <script src="JS/scroll.js"></script>
+  <script src="JS/slider.js"></script>
+  <script src="JS/burgir.js"></script>
+
+</body>
+
+</html>
